@@ -42,6 +42,7 @@ session = Session(engine)
 
 
 @app.route("/")
+@app.route("/index.html")
 def index():
     """Return the homepage."""
     return render_template('index.html')
